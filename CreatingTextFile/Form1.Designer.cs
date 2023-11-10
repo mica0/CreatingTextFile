@@ -28,13 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.txtInput = new System.Windows.Forms.TextBox();
+            this.btnCreate = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // txtInput
+            // 
+            this.txtInput.Font = new System.Drawing.Font("Sylfaen", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInput.Location = new System.Drawing.Point(62, 112);
+            this.txtInput.Name = "txtInput";
+            this.txtInput.Size = new System.Drawing.Size(257, 64);
+            this.txtInput.TabIndex = 0;
+            // 
+            // btnCreate
+            // 
+            this.btnCreate.Font = new System.Drawing.Font("Sylfaen", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreate.Location = new System.Drawing.Point(130, 218);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(116, 55);
+            this.btnCreate.TabIndex = 1;
+            this.btnCreate.Text = "Create";
+            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(393, 389);
+            this.Controls.Add(this.btnCreate);
+            this.Controls.Add(this.txtInput);
+            this.Name = "Form1";
+            this.Text = "FrmLab1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox txtInput;
+        private System.Windows.Forms.Button btnCreate;
     }
 }
 
