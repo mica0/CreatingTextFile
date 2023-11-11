@@ -35,13 +35,15 @@
             // 
             // btnOkay
             // 
+            this.btnOkay.BackColor = System.Drawing.Color.RosyBrown;
             this.btnOkay.Font = new System.Drawing.Font("Sylfaen", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOkay.ForeColor = System.Drawing.Color.Transparent;
             this.btnOkay.Location = new System.Drawing.Point(133, 217);
             this.btnOkay.Name = "btnOkay";
             this.btnOkay.Size = new System.Drawing.Size(116, 55);
             this.btnOkay.TabIndex = 3;
             this.btnOkay.Text = "Okay";
-            this.btnOkay.UseVisualStyleBackColor = true;
+            this.btnOkay.UseVisualStyleBackColor = false;
             this.btnOkay.Click += new System.EventHandler(this.btnOkay_Click);
             // 
             // txtFileName
@@ -66,6 +68,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightPink;
             this.ClientSize = new System.Drawing.Size(393, 382);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOkay);

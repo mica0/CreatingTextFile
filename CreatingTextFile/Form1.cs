@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CreatingTextFile;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,6 +33,12 @@ namespace CreatingTextFile
                 outputFile.WriteLine(getInput);
                 Console.WriteLine(getInput);
             }
+            if (!string.IsNullOrEmpty(FrmFileName.SetFileName)) 
+            {
+            FrmRegistration registrationForm = new FrmRegistration();
+            registrationForm.ShowDialog();
+            }
         }
     }
 }
+
