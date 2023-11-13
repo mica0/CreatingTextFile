@@ -48,6 +48,7 @@
             this.cbProgram = new System.Windows.Forms.ComboBox();
             this.cbGender = new System.Windows.Forms.ComboBox();
             this.btnRegister = new System.Windows.Forms.Button();
+            this.btnRecords = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -237,12 +238,26 @@
             this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
+            // btnRecords
+            // 
+            this.btnRecords.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnRecords.Font = new System.Drawing.Font("Sylfaen", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecords.ForeColor = System.Drawing.Color.Transparent;
+            this.btnRecords.Location = new System.Drawing.Point(900, 365);
+            this.btnRecords.Name = "btnRecords";
+            this.btnRecords.Size = new System.Drawing.Size(148, 39);
+            this.btnRecords.TabIndex = 20;
+            this.btnRecords.Text = "Records";
+            this.btnRecords.UseVisualStyleBackColor = false;
+            this.btnRecords.Click += new System.EventHandler(this.btnRecords_Click);
+            // 
             // FrmRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightPink;
             this.ClientSize = new System.Drawing.Size(1060, 450);
+            this.Controls.Add(this.btnRecords);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.cbGender);
             this.Controls.Add(this.cbProgram);
@@ -293,5 +308,6 @@
         private System.Windows.Forms.ComboBox cbProgram;
         private System.Windows.Forms.ComboBox cbGender;
         private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Button btnRecords;
     }
 }

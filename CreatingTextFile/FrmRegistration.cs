@@ -148,25 +148,33 @@ namespace CreatingTextFile
         private void btnRegister_Click(object sender, EventArgs e)
         {
             string fileName = $"{txtLastName.Text}_{txtFirstName.Text}_{txtMiddle.Text}.txt";
-            string filePath = Path.Combine("C:\\Users\\vcaga\\OneDrive\\Documents", fileName);
+            string filePath = Path.Combine("C:\\Users\\vcaga\\OneDrive\\Desktop\\Micaela Files\\3RD YR\\Event\\Files", fileName);
             try 
             {
                 using (StreamWriter sw = File.CreateText(filePath)) 
                 {
                 sw.WriteLine($"Student No. : {txtSN.Text}");
                 sw.WriteLine($"Program: {cbProgram.Text}");
-                sw.WriteLine($"Last Name: {txtLastName.Text + ", " + txtFirstName.Text + " " + txtMiddle.Text}");
+                sw.WriteLine($"Full Name: {txtLastName.Text + ", " + txtFirstName.Text + " " + txtMiddle.Text}");
                 sw.WriteLine($"Age: {txtAge.Text}");
                 sw.WriteLine($"Gender: {cbGender.Text}");
                 sw.WriteLine($"Birthday: {dateTimePicker1.Value.ToShortDateString()}");
                 sw.WriteLine($"Contact: {txtContact.Text}");
                 }
                 FrmFileName.SetFileName = fileName;
-                    this.Close();
+                this.Hide();
+
             }catch (Exception ex) 
             {
                 MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }   
+        }
+
+        private void btnRecords_Click(object sender, EventArgs e)
+        {
+            FrmStudentRecord studentdataForm = new FrmStudentRecord();
+            studentdataForm.ShowDialog();
+            this.Hide();
         }
     }
 }
